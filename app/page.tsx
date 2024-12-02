@@ -225,7 +225,7 @@ export default function Home() {
                       <h4 className="text-[#46eac8] font-bold">
                         Token Supply Sale
                       </h4>
-                      <p className="text-white font-bold">90%</p>
+                      <p className="text-white font-bold">80%</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -235,7 +235,7 @@ export default function Home() {
                       <h4 className="text-[#46eac8] font-bold">
                         CEX Liquidity
                       </h4>
-                      <p className="text-white font-bold">10%</p>
+                      <p className="text-white font-bold">20%</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -245,7 +245,7 @@ export default function Home() {
                   <CardContent className="p-6">
                     <div className="flex justify-between items-center">
                       <h4 className="text-[#46eac8] font-bold">1 $KAS</h4>
-                      <p className="text-white font-bold">2250 $JADE</p>
+                      <p className="text-white font-bold">2000 $JADE</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -253,7 +253,7 @@ export default function Home() {
                   <CardContent className="p-6">
                     <div className="flex justify-between items-center">
                       <h4 className="text-[#46eac8] font-bold">1 $WADU</h4>
-                      <p className="text-white font-bold">0.0004444 $KAS</p>
+                      <p className="text-white font-bold">0.0005 $KAS</p>
                     </div>
                   </CardContent>
                 </Card>
