@@ -89,14 +89,14 @@ export default function Home() {
               — Embrace the Power of BlockDAG Technology
             </p>
             <h1 className="text-5xl md:text-7xl font-bold">
-              $JADE Future
+              $JADE
               <br />
-              <span className="text-[#46eac8]">OF Kaspa</span>
+              <span className="text-[#46eac8]">Serpent Dragon of Kaspa</span>
             </h1>
             <p className="text-gray-400">
-              join our community right now! The first serpent dragon on krc20
+              Join our community right now!
               <br />
-              TICKER: JADE
+              The first serpent dragon on KRC20
             </p>
             <div className="flex gap-4">
               <Button
