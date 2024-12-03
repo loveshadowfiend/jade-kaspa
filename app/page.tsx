@@ -252,7 +252,7 @@ export default function Home() {
                 <Card className="bg-[#2A2A2A] border-[#46eac8]/20">
                   <CardContent className="p-6">
                     <div className="flex justify-between items-center">
-                      <h4 className="text-[#46eac8] font-bold">1 $WADU</h4>
+                      <h4 className="text-[#46eac8] font-bold">1 $JADE</h4>
                       <p className="text-white font-bold">0.0005 $KAS</p>
                     </div>
                   </CardContent>
