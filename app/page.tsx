@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import { useRef } from "react";
 import { AuroraBackground } from "@/components/aurora-background";
-import Link from "next/link";
 
 export default function Home() {
   const refContentBuy = useRef<HTMLElement>(null);
