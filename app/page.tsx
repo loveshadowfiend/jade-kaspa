@@ -138,7 +138,7 @@ export default function Home() {
               </h3>
               <ul className="flex flex-col items-center space-y-2 text-gray-400">
                 <li className="flex items-center gap-2">
-                  Jade is an nephritis dragon, that symbolize wealth and
+                  Jade is a serpent dragon, that symbolize wealth and
                   determination.
                 </li>
                 <li className="flex items-center gap-2">
@@ -303,33 +303,25 @@ export default function Home() {
               {
                 quarter: "Phase 1",
                 title: "Launch",
-                items: [
-                  "Sell 100% Jade tokens",
-                  "Establish community",
-                  "Shilling in KSPR chats",
-                ],
+                items: ["Complete the minting process", "Establish community"],
               },
               {
                 quarter: "Phase 2",
                 title: "Growth",
-                items: [
-                  "Listing on DEX and CEX",
-                  "Marketing campaigns",
-                  "Collabs",
-                ],
+                items: ["Chainge listing", "Marketing campaigns", "Collabs"],
               },
               {
                 quarter: "Phase 3",
                 title: "Development",
                 items: [
                   "Creating unique NFTs for holders of Jade",
-                  "Starting development of DApp for minting from various wallets",
+                  "Development of DApp that mints from various wallets",
                 ],
               },
               {
                 quarter: "Phase 4",
                 title: "Scaling",
-                items: ["More collabs and listings"],
+                items: ["More collabs and CEX listings"],
               },
             ].map((phase, index) => (
               <Card
