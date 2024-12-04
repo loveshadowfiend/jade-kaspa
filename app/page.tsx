@@ -84,8 +84,6 @@ export default function Home() {
             </h1>
             <p className="text-gray-400 text-center">
               Join our community right now!
-              <br />
-              The first serpent dragon on KRC20
             </p>
             <div className="flex gap-4 justify-center">
               <Button
@@ -134,16 +132,19 @@ export default function Home() {
                 About Our Jade token
               </h2>
               <h3 className="text-4xl font-bold text-center">
-                Jade is Changing the Game!
+                Jade is Changing the Game
               </h3>
               <ul className="flex flex-col items-center space-y-2 text-gray-400">
-                <li className="flex items-center gap-2">
-                  Jade is a serpent dragon, that symbolize wealth and
+                <li className="flex items-center gap-2 text-center">
+                  Jade is a serpent dragon, that symbolizes wealth and
                   determination.
                 </li>
+                <li className="flex items-center gap-2 text-center">
+                  We&apos;re sure, that right mascot and naming are the keys to
+                  success!
+                </li>
                 <li className="flex items-center gap-2">
-                  We&apos;re sure, that right mascot and naming are one of key
-                  to success.
+                  Also our beloved dragon is fully hand-drawn {"<3"}
                 </li>
               </ul>
               <div className="flex justify-center">
@@ -308,20 +309,28 @@ export default function Home() {
               {
                 quarter: "Phase 2",
                 title: "Growth",
-                items: ["Chainge listing", "Marketing campaigns", "Collabs"],
+                items: [
+                  "Chainge listing",
+                  "Marketing campaigns",
+                  "Collabs",
+                  "Development start of DApp that mints KRC20 tokens from multiple wallets at once",
+                ],
               },
               {
                 quarter: "Phase 3",
                 title: "Development",
                 items: [
                   "Creating unique NFTs for holders of Jade",
-                  "Development of DApp that mints from various wallets",
+                  "Release of our DApp",
                 ],
               },
               {
                 quarter: "Phase 4",
                 title: "Scaling",
-                items: ["More collabs and CEX listings"],
+                items: [
+                  "More collabs and CEX listings",
+                  "Continue development of our DApp",
+                ],
               },
             ].map((phase, index) => (
               <Card
@@ -337,7 +346,7 @@ export default function Home() {
                 <ul className="text-gray-400 space-y-2">
                   {phase.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-[#46eac8] rounded-full" />
+                      <div className="min-w-2 min-h-2 bg-[#46eac8] rounded-full" />
                       {item}
                     </li>
                   ))}
