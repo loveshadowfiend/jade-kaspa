@@ -27,15 +27,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#1A1A1A]">
       {/* Navigation */}
-      <nav className="flex items-center justify-center p-4 bg-[#1A1A1A]/80 backdrop-blur-sm fixed w-full z-50 border-b border-[#46eac8]/10">
-        {/* <Image
-          src="/logo.svg"
-          alt="Jade Logo"
-          width={40}
-          height={40}
-          className="w-10 h-10"
-        /> */}
-        <div className="hidden md:flex items-center gap-6 text-[#46eac8]">
+      <nav className="flex items-center justify-center p-4 bg-[#1A1A1A]/80 backdrop-blur fixed w-full z-50 border-b border-[#46eac8]/10 h-[50px]">
+        <div className="flex items-center gap-6 text-[#46eac8]">
           <a
             style={{ cursor: "pointer" }}
             onClick={() =>
@@ -78,28 +71,24 @@ export default function Home() {
       {/* Hero Section */}
       <section
         ref={refContentHome}
-        className="relative min-h-screen flex items-center justify-center"
+        className="flex items-center justify-center"
       >
-        {/* <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A] to-transparent" />
-          <div className="absolute inset-0 bg-[url('/logo.svg')] bg-cover bg-center opacity-10" />
-        </div> */}
-        <AuroraBackground className="px-20 grid md:grid-cols-2 gap-8 items-center relative">
+        <AuroraBackground className="items-center relative">
           <div className="text-white space-y-6">
-            <p className="text-[#46eac8]">
-              — Embrace the Power of BlockDAG Technology
+            <p className="text-[#46eac8] text-center">
+              Embrace the Meme of BlockDAG Technology
             </p>
-            <h1 className="text-5xl md:text-7xl font-bold">
+            <h1 className="text-5xl md:text-7xl font-bold text-center">
               $JADE
               <br />
               <span className="text-[#46eac8]">Serpent Dragon of Kaspa</span>
             </h1>
-            <p className="text-gray-400">
+            <p className="text-gray-400 text-center">
               Join our community right now!
               <br />
               The first serpent dragon on KRC20
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
               <Button
                 variant="outline"
                 className="border-[#46eac8] text-[#46eac8] hover:bg-[#46eac8]/10"
@@ -116,49 +105,17 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center">
-            <div className="relative w-[400px] h-[400px]">
-              <Image
-                src="/logo.svg"
-                alt="Jade Dragon"
-                width={400}
-                height={400}
-                className="w-full max-w-[400px]"
-              />
-              {/* <div className="absolute inset-0 bg-gradient-to-r from-[#46eac8]/20 to-transparent rounded-full animate-spin-slow" /> */}
-            </div>
-          </div>
         </AuroraBackground>
       </section>
-
-      {/* Donate Section */}
-      <section className="bg-[#1A1A1A] py-12 px-4 border-y border-[#46eac8]/10">
-        <div className="container mx-auto">
-          <div className="bg-[#2A2A2A] rounded-lg p-6 text-center">
-            <h2 className="text-2xl font-bold text-[#46eac8] mb-4">Donate</h2>
-            <p className="text-white text-lg">
-              We are not collecting donations. If you want to support us, you
-              can simply buy our token using the KSPR bot.
-            </p>
-            <ClientButton
-              className="mt-6 bg-[#46eac8] hover:bg-[#46eac8]/80 text-[#1A1A1A] font-bold"
-              onClick={() =>
-                refContentBuy.current?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Buy JADE Token
-            </ClientButton>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section ref={refContentAbout} id="about" className="py-20 px-4">
-        <div className="container mx-auto">
+      <section
+        ref={refContentAbout}
+        id="about"
+        className="py-20 px-4 bg-[#2A2A2A]"
+      >
+        <div className="mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#46eac8]/20 to-transparent rounded-full animate-spin-slow" />
                 <Image
                   src="/logo.svg"
                   alt="Jade Dragon Symbol"
@@ -202,85 +159,37 @@ export default function Home() {
       </section>
       {/* Tokenomics Section */}
       <section ref={refContentTokenomic} className="py-20 px-4 bg-[#1A1A1A]">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold text-[#46eac8] mb-2">
-              Token Distribution
-            </h2>
-            <h3 className="text-4xl font-bold text-white">Tokenomics</h3>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <Card className="bg-[#2A2A2A] border-[#46eac8]/20">
-                <CardContent className="p-6">
-                  <h4 className="text-[#46eac8] text-xl font-bold mb-4">
-                    Total Supply
-                  </h4>
-                  <p className="text-white text-3xl font-bold">1,000,000,000</p>
-                </CardContent>
-              </Card>
-              <div className="grid gap-4">
-                <Card className="bg-[#2A2A2A] border-[#46eac8]/20">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-center">
-                      <h4 className="text-[#46eac8] font-bold">
-                        Token Supply Sale
-                      </h4>
-                      <p className="text-white font-bold">80%</p>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="bg-[#2A2A2A] border-[#46eac8]/20">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-center">
-                      <h4 className="text-[#46eac8] font-bold">
-                        CEX Liquidity
-                      </h4>
-                      <p className="text-white font-bold">20%</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className="grid gap-4">
-                <Card className="bg-[#2A2A2A] border-[#46eac8]/20">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-center">
-                      <h4 className="text-[#46eac8] font-bold">1 $KAS</h4>
-                      <p className="text-white font-bold">2000 $JADE</p>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="bg-[#2A2A2A] border-[#46eac8]/20">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-center">
-                      <h4 className="text-[#46eac8] font-bold">1 $JADE</h4>
-                      <p className="text-white font-bold">0.0005 $KAS</p>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="bg-[#2A2A2A] border-[#46eac8]/20">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-center">
-                      <h4 className="text-[#46eac8] font-bold">Initial Mcap</h4>
-                      <p className="text-white font-bold">400,000 $KAS</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+        <div className="text-center mb-12">
+          <h2 className="text-2xl font-bold text-[#46eac8] mb-2">
+            88 is a lucky number!
+          </h2>
+          <h3 className="text-4xl font-bold text-white">Tokenomics </h3>
+        </div>
+        <div className="container mx-auto grid md:grid-cols-3 gap-8">
+          <Card className="bg-[#1A1A1A] border-[#46eac8]/20 p-6 group hover:border-[#46eac8] transition-colors">
+            <div className="text-[#46eac8] font-bold mb-2 text-[24px] text-center md:text-[40px]">
+              8 800
             </div>
-            <div className="flex justify-center">
-              <div className="relative w-full max-w-[500px]">
-                <Image
-                  src="/logo.svg"
-                  alt="Jade Logo"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#46eac8]/20 to-transparent rounded-full animate-spin-slow" />
-              </div>
+            <h4 className="text-white text-xl font-bold mb-4 text-center">
+              Per Mint
+            </h4>
+          </Card>
+          <Card className="bg-[#1A1A1A] border-[#46eac8]/20 p-6 group hover:border-[#46eac8] transition-colors">
+            <div className="text-[#46eac8] font-bold mb-2 text-center text-[24px] md:text-[40px]">
+              88K
             </div>
-          </div>
+            <h4 className="text-white text-xl font-bold mb-4 text-center">
+              Total Supply
+            </h4>
+          </Card>
+          <Card className="bg-[#1A1A1A] border-[#46eac8]/20 p-6 group hover:border-[#46eac8] transition-colors">
+            <div className="text-[#46eac8] font-bold mb-2 text-[24px] text-center md:text-[40px]">
+              0%
+            </div>
+            <h4 className="text-white text-xl font-bold mb-4 text-center">
+              Pre-minted
+            </h4>
+          </Card>
         </div>
       </section>
 
@@ -412,9 +321,9 @@ export default function Home() {
                 ],
               },
               {
-                quarter: "Coming soon",
+                quarter: "Later",
                 title: "Scaling",
-                items: ["More collabs and listings", "Airdrop for holders"],
+                items: ["More collabs and listings"],
               },
             ].map((phase, index) => (
               <Card
