@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useRef } from "react";
 import { AuroraBackground } from "@/components/aurora-background";
+import Link from "next/link";
 
 export default function Home() {
   const refContentBuy = useRef<HTMLElement>(null);
@@ -90,17 +91,22 @@ export default function Home() {
             <div className="flex gap-4 justify-center">
               <Button
                 variant="outline"
-                className="border-[#46eac8] text-[#46eac8] hover:bg-[#46eac8]/10"
+                className="border-[#46eac8] text-[#46eac8] hover:bg-[#46eac8]/10 relative"
+                onClick={() =>
+                  refContentContact.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
               >
-                Whitepaper
+                Socials
               </Button>
               <Button
-                className="bg-[#46eac8] hover:bg-[#46eac8]/80 text-[#1A1A1A] font-bold"
+                className="bg-[#46eac8] hover:bg-[#46eac8]/80 text-[#1A1A1A] font-bold relative"
                 onClick={() =>
                   refContentBuy.current?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Buy Token
+                How to buy
               </Button>
             </div>
           </div>
