@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import {
   MessageCircle,
   Wallet,
@@ -12,7 +12,6 @@ import {
   MessageSquare,
   Twitter,
 } from "lucide-react";
-import { ClientButton } from "@/components/client-button";
 import { useRef } from "react";
 import { AuroraBackground } from "@/components/aurora-background";
 
