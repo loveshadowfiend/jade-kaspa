@@ -130,10 +130,12 @@ export default function Home() {
               </div>
             </div>
             <div className="text-white space-y-6">
-              <h2 className="text-3xl font-bold text-[#46eac8]">
+              <h2 className="text-3xl font-bold text-[#46eac8] text-center">
                 About Our Jade token
               </h2>
-              <h3 className="text-4xl font-bold">Jade is Changing the Game!</h3>
+              <h3 className="text-4xl font-bold text-center">
+                Jade is Changing the Game!
+              </h3>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#46eac8] rounded-full" />
@@ -146,17 +148,19 @@ export default function Home() {
                   to success.
                 </li>
               </ul>
-              <Button
-                variant="outline"
-                className="border-[#46eac8] text-[#46eac8] hover:bg-[#46eac8]/10"
-                onClick={() =>
-                  refContentTokenomic.current?.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                Read More
-              </Button>
+              <div className="flex justify-center">
+                <Button
+                  variant="outline"
+                  className="border-[#46eac8] text-[#46eac8] hover:bg-[#46eac8]/10"
+                  onClick={() =>
+                    refContentTokenomic.current?.scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  Read More
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -317,7 +321,7 @@ export default function Home() {
                 ],
               },
               {
-                quarter: "Phase 4",
+                quarter: "Phase 3",
                 title: "Development",
                 items: [
                   "Creating unique NFTs for holders of Jade",
@@ -325,7 +329,7 @@ export default function Home() {
                 ],
               },
               {
-                quarter: "Phase 5",
+                quarter: "Phase 4",
                 title: "Scaling",
                 items: ["More collabs and listings"],
               },
