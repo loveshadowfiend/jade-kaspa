@@ -136,14 +136,12 @@ export default function Home() {
               <h3 className="text-4xl font-bold text-center">
                 Jade is Changing the Game!
               </h3>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="flex flex-col items-center space-y-2 text-gray-400">
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-[#46eac8] rounded-full" />
                   Jade is an nephritis dragon, that symbolize wealth and
                   determination.
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-[#46eac8] rounded-full" />
                   We&apos;re sure, that right mascot and naming are one of key
                   to success.
                 </li>
