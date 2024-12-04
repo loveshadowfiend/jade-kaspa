@@ -121,7 +121,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="relative">
                 <Image
-                  src="/logo.svg"
+                  src="/cute.png"
                   alt="Jade Dragon Symbol"
                   width={400}
                   height={400}
@@ -165,14 +165,14 @@ export default function Home() {
       <section ref={refContentTokenomic} className="py-20 px-4 bg-[#1A1A1A]">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold text-[#46eac8] mb-2">
-            88 is a lucky number!
+            Fair Launch
           </h2>
           <h3 className="text-4xl font-bold text-white">Tokenomics </h3>
         </div>
         <div className="container mx-auto grid md:grid-cols-3 gap-8">
           <Card className="bg-[#1A1A1A] border-[#46eac8]/20 p-6 group hover:border-[#46eac8] transition-colors">
             <div className="text-[#46eac8] font-bold mb-2 text-[24px] text-center md:text-[40px]">
-              8 800
+              25 900
             </div>
             <h4 className="text-white text-xl font-bold mb-4 text-center">
               Per Mint
@@ -180,7 +180,7 @@ export default function Home() {
           </Card>
           <Card className="bg-[#1A1A1A] border-[#46eac8]/20 p-6 group hover:border-[#46eac8] transition-colors">
             <div className="text-[#46eac8] font-bold mb-2 text-center text-[24px] md:text-[40px]">
-              88K
+              800M
             </div>
             <h4 className="text-white text-xl font-bold mb-4 text-center">
               Total Supply
@@ -299,7 +299,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               {
-                quarter: "December 2024",
+                quarter: "Phase 1",
                 title: "Launch",
                 items: [
                   "Sell 100% Jade tokens",
@@ -308,7 +308,7 @@ export default function Home() {
                 ],
               },
               {
-                quarter: "Mid December 2024",
+                quarter: "Phase 2",
                 title: "Growth",
                 items: [
                   "Listing on DEX and CEX",
@@ -317,7 +317,7 @@ export default function Home() {
                 ],
               },
               {
-                quarter: "End of December 2024",
+                quarter: "Phase 4",
                 title: "Development",
                 items: [
                   "Creating unique NFTs for holders of Jade",
@@ -325,7 +325,7 @@ export default function Home() {
                 ],
               },
               {
-                quarter: "Later",
+                quarter: "Phase 5",
                 title: "Scaling",
                 items: ["More collabs and listings"],
               },
