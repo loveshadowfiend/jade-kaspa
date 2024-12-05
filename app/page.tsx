@@ -9,8 +9,6 @@ import {
   CreditCard,
   Search,
   DollarSign,
-  MessageSquare,
-  Twitter,
 } from "lucide-react";
 import { useRef } from "react";
 import { AuroraBackground } from "@/components/aurora-background";
