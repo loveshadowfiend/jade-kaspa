@@ -378,7 +378,13 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-[#1A1A1A] rounded-lg border border-[#46eac8]/20 hover:border-[#46eac8] transition-colors group"
             >
-              <MessageSquare className="w-6 h-6 text-[#46eac8]" />
+              <Image
+                src="/telegram.svg"
+                alt="Telegram Social"
+                width={6}
+                height={6}
+                className="w-6 h-6 fill-[#46eac8]"
+              />
               <span className="text-white group-hover:text-[#46eac8] transition-colors">
                 Telegram
               </span>
@@ -389,9 +395,15 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-[#1A1A1A] rounded-lg border border-[#46eac8]/20 hover:border-[#46eac8] transition-colors group"
             >
-              <Twitter className="w-6 h-6 text-[#46eac8]" />
+              <Image
+                src="/x.svg"
+                alt="X Social"
+                width={6}
+                height={6}
+                className="w-6 h-6 fill-[#46eac8]"
+              />
               <span className="text-white group-hover:text-[#46eac8] transition-colors">
-                Twitter
+                X
               </span>
             </a>
           </div>
