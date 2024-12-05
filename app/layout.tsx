@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Jade on Kaspa",
-  description: "The first Serpent Dragon on KRC20",
+  description: "Serpent Dragon of KRC20",
 };
 
 export default function RootLayout({
