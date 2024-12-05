@@ -307,28 +307,17 @@ export default function Home() {
               {
                 quarter: "Phase 2",
                 title: "Growth",
-                items: [
-                  "Chainge listing",
-                  "Marketing campaigns",
-                  "Collabs",
-                  "Development start of DApp that mints KRC20 tokens from multiple wallets at once",
-                ],
+                items: ["Chainge listing", "Marketing campaigns", "Collabs"],
               },
               {
                 quarter: "Phase 3",
                 title: "Development",
-                items: [
-                  "Creating unique NFTs for holders of Jade",
-                  "Release of our DApp",
-                ],
+                items: ["Creating unique NFTs for holders of Jade"],
               },
               {
                 quarter: "Phase 4",
                 title: "Scaling",
-                items: [
-                  "More collabs and CEX listings",
-                  "Continue development of our DApp",
-                ],
+                items: ["More collabs and CEX listings"],
               },
             ].map((phase, index) => (
               <Card
